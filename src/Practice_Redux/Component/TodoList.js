@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TodoItem from "./TodoItem";
+import todo from "../Reducer/Reducer_Todo";
 
 const TodoList = React.memo(function TodoList({todos}) {
-    console.log("TODOLIST");
-    console.log(todos);
+
+    useEffect(()=> {
+        console.log("TodoList reload. list : " + todos);
+    })
+
     return (
         <ul>
             {todos.content.map(function (content) {

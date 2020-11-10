@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import TodoList from "./TodoList";
 
 const TodoTable = ({todos, onCreate}) => {
@@ -14,6 +14,10 @@ const TodoTable = ({todos, onCreate}) => {
         onCreate(input)
         setInput("");
     }
+
+    useEffect(() => {
+        console.log("Todo Table reload : " + todos);
+    })
 
     return (
         <div>
