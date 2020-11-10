@@ -5,6 +5,7 @@ import './App.css';
 import {hot} from 'react-hot-loader/root'
 import React from 'react';
 import TodosContainer from "./Practice_Redux/Container/Container_Todo";
+import IncreaseButton from "./Practice_Redux/Component/IncreaseButton";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <TodosContainer />
+        <IncreaseButton />
 
       </header>
     </div>

@@ -22,8 +22,6 @@ function TodosContainer() {
     })
 
     function onCreate(inputText) {
-        debugger;
-        console.log(state_todo);
         return dispatcher(addTodo(inputText));
     }
 
