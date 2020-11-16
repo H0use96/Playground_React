@@ -1,0 +1,27 @@
+.searchbar {
+    border: 1px solid red;
+    border-radius: 30px;
+
+    width: 1000px;
+    height: auto;
+
+    padding: 10px;
+
+    font-size: 3vh;
+}
+
+.sub {
+    color: #61dafb;
+}
+
+@media (max-width: 999px)  {
+
+    .searchbar {
+        visibility: hidden;
+    }
+
+    .sub {
+        color: red;
+        visibility: visible;
+    }
+}

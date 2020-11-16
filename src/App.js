@@ -7,6 +7,9 @@ import React from 'react';
 import TodosContainer from "./Practice_Redux/Container/Container_Todo";
 import IncreaseButton from "./Practice_Redux/Component/IncreaseButton";
 
+// setup practice/css
+import Searchbar from './Practice_CSS/searchbar'
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +18,8 @@ function App() {
 
         <TodosContainer />
         <IncreaseButton />
+
+        <Searchbar />
 
       </header>
     </div>
